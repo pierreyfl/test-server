@@ -23,4 +23,5 @@ test:
 
 production:
   <<: *default
-  database: testserver_production
+  database: deploy
+  password: ENV["DB_PASSWORD"]
